@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 from django.views import View
-from .inspector import DjangoSchemaCollector
+from .inspector import DjangoSchemaInspector
 
 class SchemaView(View):
     """
@@ -11,6 +11,6 @@ class SchemaView(View):
         """
         Handles GET requests to return the schema in JSON format.
         """
-        collector = DjangoSchemaCollector()
+        collector = DjangoSchemaInspector()
         schema = collector.collect_schema()
         return JsonResponse(schema, safe=False)

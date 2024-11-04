@@ -7,7 +7,7 @@ from .sdk_settings import SDK_SETTINGS
 
 DJANGO_BUILTIN_APPS = {'auth', 'admin', 'sessions', 'contenttypes', 'staticfiles', 'messages'}
 
-class DjangoSchemaCollector:
+class DjangoSchemaInspector:
     def __init__(self):
         """
         Initialize the SDK with configured settings from Django settings.
