@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-model-inspector',    
-    version='1.0.2',                   
+    version='1.0.3',                   
     packages=find_packages(),
     install_requires=['Django>=3.2'],    
     author='Mowzli Sre Mohan Dass',
